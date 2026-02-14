@@ -3,7 +3,7 @@
 import { useAuth } from "@clerk/nextjs";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
+import { SignUpButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import { LinkIcon, BarChart3, Share2, Zap } from "lucide-react";
 
@@ -68,15 +68,6 @@ export default function Home() {
                   Get Started Free
                 </Button>
               </SignUpButton>
-              <SignInButton mode="modal">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="w-full sm:w-auto"
-                >
-                  Sign In
-                </Button>
-              </SignInButton>
             </div>
           </div>
         </section>
