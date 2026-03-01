@@ -43,8 +43,8 @@ export default function RootLayout({
         >
           <header style={{ display: "flex", gap: 12, padding: 12 }}>
             <SignedOut>
-              <SignInButton />
-              <SignUpButton />
+              <SignInButton  mode="modal"/>
+              <SignUpButton  mode="modal"/>
             </SignedOut>
             <SignedIn>
               <UserButton />
